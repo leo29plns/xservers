@@ -1,0 +1,10 @@
+.desc {
+    margin-top: 1rem;
+    text-align: right;
+    margin-bottom: .5rem;
+    font-style: italic;
+}
+
+ul.servers li button {
+    display: flex;
+}

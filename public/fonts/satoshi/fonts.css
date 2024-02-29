@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('satoshi_variable.woff2') format('woff2'),
+         url('satoshi_variable.woff') format('woff');
+    font-weight: 300 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('satoshi_variable_italic.woff2') format('woff2'),
+         url('satoshi_variable_italic.woff') format('woff');
+    font-weight: 300 900;
+    font-style: italic;
+}

@@ -1,0 +1,19 @@
+form.edit-server #name {
+    background-color: #0000A8;
+    color: #A8A8A8;
+    width: 30ch;
+}
+
+form.edit-server input[type="number"] {
+    background-color: #0000A8;
+    color: #A8A8A8;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    margin-bottom: .5rem;
+}

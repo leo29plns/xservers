@@ -1,0 +1,53 @@
+.identity p {
+    display: inline;
+}
+
+.player .footer {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.player .status {
+    flex-grow: 1;
+}
+
+.player .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.player .identity {
+    border-top: 2px dashed #000000;
+    text-align: right;
+}
+
+.player .identity p {
+    background-color: #059899;
+}
+
+.enemy {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.enemy .status {
+    margin-top: 1rem;
+}
+
+.enemy .identity p {
+    background-color: #74507A;
+}
+
+.enemy .board {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30ch;
+    background-color: #0000A8;
+    color: #A8A8A8;
+    padding: 1rem;
+}

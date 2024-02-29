@@ -1,0 +1,41 @@
+.servers-selector input[type="checkbox"] {
+    display: none;
+}
+
+.servers-selector label {
+    cursor: pointer;
+}
+
+.servers-selector label:hover {
+    background-color: var(--selector-state);
+}
+
+.servers-selector input[type="checkbox"].player + label {
+    cursor: pointer;
+    background-color: #059899;
+}
+
+.servers-selector input[type="checkbox"].enemy + label {
+    cursor: pointer;
+    background-color: #74507A;
+}
+
+.servers-selector fieldset {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.servers-selector .servers-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.servers-selector .instruction span.player {
+    background-color: #059899;
+}
+
+.servers-selector .instruction span.enemy {
+    background-color: #74507A;
+}
