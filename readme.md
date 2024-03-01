@@ -1,6 +1,6 @@
 # X Servers
 
-[xservers.leo29plns.fr](https://xservers.leo29plns.fr/)
+[xservers.mcb29.ovh](https://xservers.mcb29.ovh/)
 
 ## Licence
 
