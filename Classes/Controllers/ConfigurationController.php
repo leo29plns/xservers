@@ -49,8 +49,13 @@ class ConfigurationController
                     break;
                 case 'deleteServerConfirm':
                         if (isset($_POST['id'])) {
+                            $editedServer = new Server();
+                            $editedServerRepository = new ServerRepository($editedServer);
+                        
+                            $editedServerRepository->getById($_POST['id']);
+
                             $html = new ViewBuilder('configuration/deleteServerConfirm.php');
-                            $html->entities['server'] = $server;
+                            $html->entities['server'] = $editedServer;
 
                             echo $html->render();
                         }
