@@ -47,6 +47,16 @@ class ConfigurationController
                         $editedServerRepository->update();
                     }
                     break;
+                case 'deleteServerConfirm':
+                        if (isset($_POST['id'])) {
+                            $html = new ViewBuilder('configuration/deleteServerConfirm.php');
+                            $html->entities['server'] = $server;
+
+                            echo $html->render();
+                        }
+
+                        exit;
+                    break;
                 case 'deleteServer':
                     if (isset($_POST['id'])) {
                         $editedServer = new Server();

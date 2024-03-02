@@ -34,7 +34,7 @@
 <nav class="bottom-nav">
     <input type="submit" form="edit-server" value="<Modifier>">
     <form method="POST">
-        <input type="hidden" name="ACTION" value="deleteServer">
+        <input type="hidden" name="ACTION" value="deleteServerConfirm">
         <input type="hidden" name="id" value="<?= $this->entities['server']->id ?>">
         <input type="submit" value="<Suppr>">
     </form>

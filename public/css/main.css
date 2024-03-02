@@ -68,3 +68,8 @@ nav.bottom-nav {
     background-color: #A8A8A8;
     padding-top: 1rem;
 }
+
+.danger {
+    color: #A80000;
+    background-color: #A8A8A8;
+}
