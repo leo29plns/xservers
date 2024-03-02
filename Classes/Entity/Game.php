@@ -10,7 +10,7 @@ class Game
     public $enemy;
 
     public $difficulty = 0.75;
-    public $botLastMoveIsAttack = false;
+    public $botLastMoveIsAttack;
 
     public function __construct(array $data = [])
     {

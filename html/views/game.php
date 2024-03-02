@@ -23,19 +23,21 @@
     <div class="board">
         <p>
             <?php
-                if ($this->entities['game']->botLastMoveIsAttack) {
-                    $messageList = [
-                        "{$this->entities['game']->enemy->name} vous attaque.",
-                        "{$this->entities['game']->enemy->name} décide de vous attaquer.",
-                        "{$this->entities['game']->enemy->name} vous a envoyé des bugs.",
-                        "{$this->entities['game']->enemy->name} attaque {$this->entities['game']->player->name}."
-                    ];
-                } else {
-                    $messageList = [
-                        "{$this->entities['game']->enemy->name} se répare.",
-                        "{$this->entities['game']->enemy->name} décide de se réparer",
-                        "{$this->entities['game']->enemy->name} opte pour de meilleurs composants."
-                    ];
+                if (is_bool($this->entities['game']->botLastMoveIsAttack)) {
+                    if ($this->entities['game']->botLastMoveIsAttack) {
+                        $messageList = [
+                            "{$this->entities['game']->enemy->name} vous attaque.",
+                            "{$this->entities['game']->enemy->name} décide de vous attaquer.",
+                            "{$this->entities['game']->enemy->name} vous a envoyé des bugs.",
+                            "{$this->entities['game']->enemy->name} attaque {$this->entities['game']->player->name}."
+                        ];
+                    } else {
+                        $messageList = [
+                            "{$this->entities['game']->enemy->name} se répare.",
+                            "{$this->entities['game']->enemy->name} décide de se réparer",
+                            "{$this->entities['game']->enemy->name} opte pour de meilleurs composants."
+                        ];
+                    }
                 }
 
                 echo $messageList[array_rand($messageList)];
