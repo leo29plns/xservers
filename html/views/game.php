@@ -34,10 +34,16 @@
                     } else {
                         $messageList = [
                             "{$this->entities['game']->enemy->name} se répare.",
-                            "{$this->entities['game']->enemy->name} décide de se réparer",
+                            "{$this->entities['game']->enemy->name} décide de se réparer.",
                             "{$this->entities['game']->enemy->name} opte pour de meilleurs composants."
                         ];
                     }
+                } else {
+                    $messageList = [
+                        "{$this->entities['game']->enemy->name} s'est introduit dans votre réseau.",
+                        "{$this->entities['game']->enemy->name} a été détecté sur votre réseau.",
+                        "{$this->entities['game']->enemy->name} s'est connecté."
+                    ];
                 }
 
                 echo $messageList[array_rand($messageList)];

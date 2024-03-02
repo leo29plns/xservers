@@ -7,14 +7,14 @@ Options -Indexes
 
 RewriteEngine On
 
-# Force HTTPS
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# # Force HTTPS
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteCond %{HTTPS} off
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Add "www." to the domain
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# # Add "www." to the domain
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # If file exists under public/
 RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2
