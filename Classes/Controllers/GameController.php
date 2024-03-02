@@ -146,7 +146,7 @@ class GameController
                 case 'end':
                     $gameRepository->delete();
 
-                    header('Location: ' . $_ENV['BASE_LINK'] . '');
+                    header('Location: ' . $_ENV['BASE_LINK'] . 'selection');
                     exit;
 
                     break;
